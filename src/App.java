@@ -3,5 +3,7 @@ public class App {
         System.out.println("Hello, World! I am Edward No. 123456!");
 
         System.out.println("Hello, World! I am Edward No. 17!");
+
+         System.out.println("Hello, World! I am Edward No. 18!");
     }
 }
