@@ -63,6 +63,7 @@ public class BasicDeclare {
         String[] classRooms = { "教室A", "教室B"};
         System.out.println(classRooms[0]);
         System.out.println(Arrays.toString(classRooms));  //印出整排陣列
+        
 
     }
 }
