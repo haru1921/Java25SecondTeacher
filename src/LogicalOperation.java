@@ -19,7 +19,6 @@ public class LogicalOperation {
         // int b = 12;
         int diff1 = b - a;
         System.out.println(diff1);
-
         int diff2 = a - b;
         System.out.println(diff2);
 
@@ -38,7 +37,6 @@ public class LogicalOperation {
         // int b = 12;
         double quotiend1  = a / b;  //除法分母不能為0
         System.out.println(quotiend1);
-
         double quotiend2  = b / a;
         System.out.println(quotiend2);
 
@@ -116,7 +114,7 @@ public class LogicalOperation {
         /*
          *  !  : 反轉
          */
-        boolean not = !(a < b);  //將答案反轉
+        boolean not = !(a < b);  //將得到的答案反轉
         System.out.println(not);
 
 
@@ -159,6 +157,6 @@ public class LogicalOperation {
         System.out.println(test1);
 
 
-        
+
     }
 }

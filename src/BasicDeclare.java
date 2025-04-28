@@ -4,21 +4,21 @@ public class BasicDeclare {
     public static void main(String[] args) throws Exception {
         /*
          * 基本型別介紹
-         * int: 整數, 範圍: -2,147,483,648 ~ 2,147,483,647
+         * int:      整數, 範圍: -2,147,483,648 ~ 2,147,483,647
          *
-         * byte: 整數, 範圍: -128 ~ 127
+         * byte:     整數, 範圍: -128 ~ 127
          *
-         * long: 整數, 範圍: -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807
+         * long:     整數, 範圍: -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807
          *
-         * float: 32位元浮點數, 需要加上F
+         * float:    32位元浮點數, 需要加上F
          *
-         * double: 64位元浮點數, 預設型別
+         * double:   64位元浮點數, 預設型別
          *
-         * char: 字元, 1個字元, 單引號
+         * char:     字元, 1個字元, 單引號
          *
-         * String: 文字, 多個字元, 雙引號 S大寫
+         * String:   文字, 多個字元, 雙引號 S大寫
          *
-         * boolean: 布林, true/false
+         * boolean:  布林, true/false
          */
 
         // int age = 25;
@@ -36,7 +36,7 @@ public class BasicDeclare {
         char c1 = 'K';  //僅可英文
         System.out.println(c1);
 
-        String name = "KAZE";  //可中文、日文...等
+        String name = "KAZE";  //可英文、中文、日文...等
         System.out.println(name);
 
         boolean isStudent = true;  //false
@@ -63,7 +63,7 @@ public class BasicDeclare {
         String[] classRooms = { "教室A", "教室B"};
         System.out.println(classRooms[0]);
         System.out.println(Arrays.toString(classRooms));  //印出整排陣列
-        
+    
 
     }
 }
