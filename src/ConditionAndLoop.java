@@ -9,14 +9,27 @@ public class ConditionAndLoop {
          *     條件不成立時執行的程式碼
          * }
          */
-        // int a = 2;
-        // int b = 3;
+        int a = 2;
+        int b = 3;
 
-        // if((a <= b)) {
+        // if(!(a <= b)) {  //反轉答案
         //     System.out.println("a 的確 <= b");
         // } else {
         //     System.out.println("a 沒有 <= b");
         // }
+
+        // if((a == 2) && (b == 3)) {
+        //     System.out.println("條件成立");
+        // } else {
+        //     System.out.println("條件不成立");
+        // }
+
+        if((a == 2) && (b == 3) || (b == 4)) {
+            System.out.println("條件成立");
+        } else {
+            System.out.println("條件不成立");
+        }
+
 
         /*
          * else if
@@ -29,30 +42,59 @@ public class ConditionAndLoop {
          *    條件1跟條件2都不成立時執行的程式碼
          * }
          */
-        // int a = 2;
 
-        // if(a == 2) {
-        //     System.out.println("a : 2");
-        // } else if(a == 3) {
-        //     System.out.println("a : 3");
-        // } else if(a == 4) {
-        //     System.out.println("a : 4");
-        // } else {
-        //     System.out.println("a 為2,3,4以外的數字");
-        // }
+        int n = 5;
+
+        if(n == 0) {
+            System.out.println("n : 0");
+        } else if(n == 1) {
+            System.out.println("n : 1");
+        } else if(n == 2) {
+            System.out.println("n : 2");
+        } else {
+            System.out.println("n 為0,1,2以外的數字");
+        }
+
+        // String[] results = {
+        //     "n : 2",
+        //     "n : 3",
+        //     "n : 4",
+        //     "n 為2,3,4以外的數字"
+        // };
+        // System.out.println(results[0]);
+
+
+        //判斷分數
+        //如果分數超過90 印出(超棒)
+        //如果分數80~90 印出(很好)
+        //如果分數60~80 印出(好)
+        //其他 印出(OK)
+        int score =100 ;
+
+        if (score >= 90){
+            System.out.println("超棒");
+        }  else if(score >= 80 && score < 90){
+            System.out.println("很好");
+        } else if(score >= 60 && score < 80){
+            System.out.println("好");
+        } else{
+            System.out.println("OK");
+        }
+ 
+
 
         /*
          * 簡化if else 寫法
          * (條件) ? 條件成立時執行的程式碼 : 條件不成立時執行的程式碼
          */
-        // int a = 2;
-        // int b = 3;
+        int c = 5;
+        int d = 3;
 
-        // String min = (a < b) ?  "A < B" :  "B > A";
-        // System.out.println(min);
+        String min = (c < d) ?  "C < D" :  "C > D";
+        System.out.println(min);
 
         /*
-         * 53,54 這兩行 效果等於以下寫法
+         * 上面兩行 效果等於以下寫法
          */
         // if(a < b) {
         //     System.out.println("A < B");
@@ -67,9 +109,53 @@ public class ConditionAndLoop {
          *     條件成立時執行的程式碼
          * }
          */
-        // for(int index = 0; index <= 10; index ++) {
-        //     System.out.println(index);
+        for(int index = 0; index <= 10; index ++) {
+            System.out.println(index);  //ln表示換行
+        }
+
+        /* 設計一個99乘法表
+         * 1x1=1 1x2=2.......
+         * 2x1=2 2x2=4........
+         * 
+         * 9x1=9 9x2=18.......
+        */
+        // for(int x = 1; x <= 9 ; x++ ){
+        //     for(int y = 1; y <= 9 ; y++ ){
+        //         System.out.print(x + "x" + y + "=" + (x*y) + " ");  //不換行
+        //     }
+        //     System.out.println();  //換行
         // }
+
+        //不要印出重複的 1x1=1 2x2=4......
+        for(int x = 1; x <= 9 ; x++ ){
+            for(int y = 1; y <= 9 ; y++ ){
+                if (!(x == y)){
+                    System.out.print(x + "x" + y + "=" + (x*y) + " ");  //不換行
+                }
+            }
+            System.out.println();  //換行
+        } 
+
+
+        /* 設計一個金字塔
+         *
+         *      *
+         *     ***
+         *    *****
+         *   *******
+         *  .............
+         */
+
+        for (int s = 1; s <= 10; s++){
+            for (int t=1; t <= 10; t+=2){
+                System.out.println("*");
+            }
+
+        }         
+
+
+
+
 
 
         /*
