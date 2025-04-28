@@ -60,9 +60,10 @@ public class BasicDeclare {
         boolean[] choose = { true, false };
         System.out.println(choose[1]);
 
+
         String[] classRooms = { "教室A", "教室B"};
         System.out.println(classRooms[0]);
-        System.out.println(Arrays.toString(classRooms));  //印出整排陣列
+        System.out.println(Arrays.toString(classRooms));  //印出整排陣列(GPT)
     
 
     }
