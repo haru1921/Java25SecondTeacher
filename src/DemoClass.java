@@ -71,5 +71,13 @@ public class DemoClass {
          * setScore 內要檢查 輸入的score需為 0 ~ 100 之間
          * 不在此範圍須跳出回應 "分數需在 0 ~ 100 之間"
          */
+
+        Student stu1 = new Student();
+        stu1.setName("A1");
+        stu1.setScore(101);
+        System.out.println(stu1.getName() + " 分數: " + stu1.getScore());
+
+        stu1.setScore(80);
+        System.out.println(stu1.getName() + " 修改成功之分數: " + stu1.getScore());
     }
 }
